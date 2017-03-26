@@ -1,0 +1,23 @@
+$def with (post)
+
+<h1>Eliminar  producto:</h1>
+<br/>
+<br/>
+<br/>
+<h2>$post.producto</h2>
+Descripcion: $post.descripcion<br/>
+Existencias: $post.existencias<br/>
+Precio_compra: $post.precio_compra<br/>
+Precio_venta: $post.precio_venta<br/>
+Imagen del producto: <br/>
+<img src="../static/images/$post.imagen_producto">
+
+<form action="/delete/$post.id_producto" method="post" >
+    <input type="submit" value="Eliminar producto" onclick="return confirmar()" class="btn btn-warning"/>
+</form>
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+web.config.debug = False
+python -m pip install
+
+<a href="/about">About</a>
+
+	<ol>
+	$for i in range(1,11,1):
+		<li>$i</li>
+	</ol>
+
+productos = get_productos()
+for item in productos:
+
+	print item.id_producto
+	print item.producto	
+	print item.descripcion
+	print item.existencias
+	print item.precio_compra
+	print item.precio_venta
